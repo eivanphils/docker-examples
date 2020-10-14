@@ -1,0 +1,12 @@
+version: '3'
+services: 
+  web:
+    container_name: nginx2
+    ports: 
+      - "8081:80"
+    volumes: 
+      # - "myData:/usr/share/nginx/html"
+      - "/home/pgarciaq/Develop/Docker/curso-docker-0-profesional/docker-compose/03-volumes/html:/usr/share/nginx/html"
+    image: nginx
+volumes: 
+  myData:
